@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd8579453be948949cb95735adb0436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleType: 0
+  obstacleType: 1
 --- !u!212 &21259520
 SpriteRenderer:
   m_ObjectHideFlags: 1

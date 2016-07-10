@@ -85,48 +85,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &356674756
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.2356791
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 418708, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a319f67720b954ddf8ae495ce8fb147f, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &870224371
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +98,7 @@ GameObject:
   - 124: {fileID: 870224373}
   - 81: {fileID: 870224372}
   - 114: {fileID: 870224377}
+  - 114: {fileID: 870224378}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -232,6 +191,17 @@ MonoBehaviour:
   blurIterations: 1
   blurType: 0
   fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
+--- !u!114 &870224378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 870224371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcb6c8e1022640d8b514a2bc9ca4340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968997558
 GameObject:
   m_ObjectHideFlags: 0
