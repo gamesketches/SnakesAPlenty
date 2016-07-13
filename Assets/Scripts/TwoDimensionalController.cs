@@ -8,8 +8,6 @@ public class TwoDimensionalController : MonoBehaviour {
 	public float anglarSpeed = 90f; //degree per seconds
 	List<int> inputStack;
 
-
-
 	// Use this for initialization
 	void Start () {
 		_rigidBody = GetComponent<Rigidbody2D> ();
