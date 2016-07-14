@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class TwoDimensionalController : MonoBehaviour {
 	public float speed = 3f;
+	public float upTurnTime = 3.0f;
+	public float leftTurnTime = 3.0f;
+	public float downTurnTime = 3.0f;
+	public float rightTurnTime = 3.0f;
 	Rigidbody2D _rigidBody;
 	public float anglarSpeed = 90f; //degree per seconds
 	List<int> inputStack;
