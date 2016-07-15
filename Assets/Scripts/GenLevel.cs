@@ -7,7 +7,12 @@ public class GenLevel : MonoBehaviour {
 	void Start () {
 		GameObject[] obstacles = Resources.LoadAll<GameObject>("prefabs");
 		foreach(GameObject obstacle in obstacles) {
-			for(int i = 0; i < 3; i++) {
+			if(obstacle.tag != "Goal") {
+				for(int i = 0; i < 3; i++) {
+					Instantiate(obstacle, new Vector3((Random.value * 12f) - 12f, (Random.value * 12f) - 12f, 0), Quaternion.identity);
+				}
+			}
+			else {
 				Instantiate(obstacle, new Vector3((Random.value * 12f) - 12f, (Random.value * 12f) - 12f, 0), Quaternion.identity);
 			}
 		}
