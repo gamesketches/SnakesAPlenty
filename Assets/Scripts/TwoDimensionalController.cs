@@ -121,15 +121,22 @@ public class TwoDimensionalController : MonoBehaviour
 
         if (currentDirect == 0)
             direction = Vector2.zero;
-        else if (currentDirect == 1)
+        else if (currentDirect == 1 && leftTurnTime > 0){
             direction = Vector2.left;
-        else if (currentDirect == 2)
+            leftTurnTime -= Time.deltaTime;
+            }
+		else if (currentDirect == 2 && rightTurnTime > 0) {
             direction = Vector2.right;
-        else if (currentDirect == 3)
+            rightTurnTime -= Time.deltaTime;
+            }
+        else if (currentDirect == 3 && upTurnTime > 0) {
             direction = Vector2.up;
-        else if (currentDirect == 4)
+            upTurnTime -= Time.deltaTime;
+            }
+        else if (currentDirect == 4 && downTurnTime > 0) {
             direction = Vector2.down;
-
+            downTurnTime -= Time.deltaTime;
+            }
 
         _rigidBody.velocity = Quaternion.Euler(0f, 0f, isTurnLeft(_rigidBody.velocity, direction) * anglarSpeed * Time.deltaTime * 75f) * _rigidBody.velocity.normalized * speed;
 
